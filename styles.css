@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Noto Sans JP", sans-serif;;
+}
+
+body{
+    background-color: #1A262F;
+}
+
+
+/* HEADER */
+header{
+    background-color: #DDD0BD;
+    max-height: 200px;
+    padding: 5px 0 5px 30px;
+}
+@media screen and (max-width: 1024px) {
+    header{
+        text-align: center;
+        padding: 5px 0;
+    }
+}
+
+#logo{
+    width: 170px;
+    height: auto;
+}
+
+/* FOOTER */
+footer{
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer p{
+    font-size: 12px;
+}
+
+#social-links{
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+}
+
+#social-links a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    transition: ease-in-out 0.2s;
+    border-radius: 4px;
+    color: #fff;
+}
+
+#social-links a:hover{
+    background: #fff;
+    color: #1A262F;
+}
+
+/* HOME */
+.container-home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+    padding: 20px;
+    height: 60vh;
+    background: #fff;
+}
+
+@media screen and (max-width: 796px) {
+    .container-home{
+        flex-direction: column;
+    }
+    .left-side{
+        text-align: center;
+        padding: 0 !important;
+    }
+    .left-side h2{
+        font-size: 20px;
+    }
+    .left-side p{
+        font-size: 15px;
+    }
+}
+
+.left-side{
+    padding: 0 50px 0 0;
+}
+.left-side h2{
+    margin-bottom: 15px;
+}
+.right-side{
+    text-align: center;
+}
+#button-home,
+.btn-options{
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    border-width: thin;
+    font-size: 15px;
+    background-color: #1A262F;
+    color: #fff;
+    cursor: pointer;
+}
+#button-home:hover,
+.btn-options:hover{
+    background-color: #1a262fe1;
+    color: #fff;
+}
+
+/* CREATE LIST OPTIONS */
+.container-page{
+    background-color: #fff;
+    height: 60vh;
+}
+
+.container-page h2{
+    text-align: center;
+    padding: 20px;
+}
+
+.container-page > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 24px;
+}
+.card{
+    width: 500px;
+    text-align: center;
+}
+.card p{
+    font-size: 13px;
+}
+.btn-options{
+    margin-top: 20px;
+}
